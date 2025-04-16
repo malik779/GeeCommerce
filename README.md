@@ -4,7 +4,7 @@ A config-driven .NET microservices core (Auth/DB/Caching) to accelerate multi-te
 # 🧩 Modular Microservices Core Framework
 
 **A domain-agnostic, plug-and-play architecture for rapid enterprise microservices development**  
-[![.NET](https://img.shields.io/badge/.NET-6.0-%23512bd4)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-8.0-%23512bd4)](https://dotnet.microsoft.com/)
 [![Angular](https://img.shields.io/badge/Angular-15+-%23dd0031)](https://angular.io/)
 
 ## 🚀 Key Features
