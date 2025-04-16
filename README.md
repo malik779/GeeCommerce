@@ -15,6 +15,7 @@ A config-driven .NET microservices core (Auth/DB/Caching) to accelerate multi-te
 | **🗃️ Database Agnostic** | SQL (PostgreSQL/SQL Server) or NoSQL (MongoDB) via `IDatabaseProvider` |
 | **🧠 Smart Caching** | Switch between Redis/in-memory with `ICacheStrategy` DI |
 | **📦 Domain Isolation** | Event-driven (Kafka/RabbitMQ) microservices with independent databases |
+| **📦 Multi-Tenant** | Tenant-driven configuration including connection strings |
 
 ## 🛠️ Quick Start
 ```csharp
