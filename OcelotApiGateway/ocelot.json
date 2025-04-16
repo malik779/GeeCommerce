@@ -1,0 +1,69 @@
+{
+  "GlobalConfiguration": {
+    "RequestIdKey": "X-Correlation-Id",
+    "BaseUrl": "https://localhost:60001"
+  },
+  "Routes": [
+    {
+      "SwaggerKey": "catalogApi",
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "Get","Post","Put","Delete" ],
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60002
+        }
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 10
+      }
+    },
+    //{
+    //  "SwaggerKey": "categoryApi",
+    //  "UpstreamPathTemplate": "/api/create",
+    //  "UpstreamHttpMethod": [ "Post" ],
+    //  "DownstreamPathTemplate": "/api/category/Create",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 44387
+    //    }
+    //  ]
+    //}
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "catalogApi",
+      "Config": [
+        {
+          "Name": "Catalog API",
+          "Url": "https://localhost:60002/swagger/v1/swagger.json"
+        }
+      ]
+
+    }
+    //{
+    //  "Key": "aggregator",
+    //  "Config": [
+    //    {
+    //      "Name": "Aggregator",
+    //      "Version": "v1",
+    //      "Url": "https://localhost:7067/swagger/v1/swagger.json"
+    //    }
+    //  ]
+    //},
+    //{
+    //  "Key": "basketapi",
+    //  "Config": [
+    //    {
+    //      "Name": "Basket API",
+    //      "Version": "v1",
+    //      "Url": "https://localhost:7298/swagger/v1/swagger.json"
+    //    }
+    //  ]
+    //}
+  ]
+}

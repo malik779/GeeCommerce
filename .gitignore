@@ -52,3 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs/GeeCommerce/CopilotIndices/0.2.1634.3922
+/.vs/GeeCommerce/FileContentIndex
+/.vs/GeeCommerce/v17
+/.vs
